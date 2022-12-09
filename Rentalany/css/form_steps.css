@@ -2,11 +2,15 @@
 
 
 .steps-content .heading{
-    font-size: 0.9rem;
     font-weight: 400;
     color: #0a0a0a;
     margin-top: 6px;
-    font-family: lato;
+    font-family: 'Cabinet Grotesk';
+font-style: normal;
+font-size: 18px;
+
+
+color: #000000;
 }
 .steps-marker span{
     font-size:1rem ;
