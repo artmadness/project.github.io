@@ -3981,7 +3981,7 @@ footer{
         justify-content: flex-start;}
         .city-slider-btns{
             margin-top: 45px;
-             margin-right: 59px;
+             margin-right: 59px!important;
 }
 }
 .s-b-n3,
