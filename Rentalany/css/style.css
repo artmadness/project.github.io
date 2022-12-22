@@ -3980,7 +3980,9 @@ footer{
     .city-slider-btns{
         justify-content: flex-start;}
         .city-slider-btns{
-            margin-top: 45px;}
+            margin-top: 45px;
+             margin-right: 59px;
+}
 }
 .s-b-n3,
 .s-b-p3{
