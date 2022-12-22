@@ -143,7 +143,7 @@ ul{
     justify-content: space-between;
     align-items: center;
     box-shadow: 2px 2px 30px rgba(255, 94, 1, 0.288);
-    padding: 4px 5px;
+    padding: 7px 8px;
     border-radius: 40px;
     grid-gap: 10px;
     z-index: 101;
@@ -493,7 +493,7 @@ ul{
     width: 100%;
     background-color: #ffffff;
     padding: 10px;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
     border-radius: 6px;
     position: relative;
     transition: all ease 0.6s;
@@ -915,7 +915,7 @@ ul{
         background-color: transparent;
         border-radius:0px;
         margin-right: 0px;
-        font-size: 1.1rem;
+        font-size: 20px;
     } 
     .ra-content .property-text-options{
         flex-wrap: nowrap;
@@ -984,7 +984,7 @@ ul{
     }
 
     .ra-nav-left .ra-logo{
-        height: 40px;
+        height: 60px;
         margin-left: 0px;
     }
     .mobile-search-icon-close{
@@ -2269,7 +2269,7 @@ button.btn.card_btn {
         display: none;
     }
     .nav-listproperty span:nth-child(1){
-        font-size: 1.4rem;
+        font-size: 27px;
         color: #000000;
         font-weight: 800;
         margin-bottom: 4px;
@@ -2289,6 +2289,10 @@ button.btn.card_btn {
     .nav-listproperty span:nth-child(1):hover{
         background-color: #dddddd;
     }
+}
+
+.home-city-container .swiper{
+    margin-left: 20px;
 }
 
 /*==main-hero=======*/
@@ -2802,7 +2806,7 @@ button.btn.card_btn {
 }
 @media(max-width:1000px){
     #popular-property{
-        margin-top: 80px;
+        margin-top: -32px;
     }
     .p-p-box-container{
         grid-template-columns: 1fr 1fr;}
@@ -3605,6 +3609,9 @@ transform: translateY(0%);}
     width: 100%;
     overflow: hidden;
 }
+.mobilemySwiper3{
+    display: none;
+}
 @media(max-width:1024px){
     .home-city-container{
         grid-template-columns: 1fr;
@@ -3622,6 +3629,20 @@ transform: translateY(0%);}
 @media(max-width:724px){
     .home-city-heading h3{
         font-size: 1.4rem;}
+    .mobilemySwiper3{
+        display: block;
+    }
+    .deskmySwiper3{
+        display: none;
+    }
+    .city-slider-btns{
+        justify-content: center !important;
+    }
+}
+@media(max-width:500px){
+    .city-box-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media(max-width:350px){
     .city-box-container{
@@ -6016,6 +6037,10 @@ color: #1B1D21;
     color: #1B1D21;
     font-size: 0.9rem;
     line-height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .product-dicount-banner{
     margin-top: 0px;
@@ -6051,7 +6076,7 @@ color: #1B1D21;
 }
 @media(max-width:600px){
 .product-page-popular .popular-product-btns{
-    top: 40%;
+    top: 44%;
     transform: translate(-50%,-40%);
 }
 }
@@ -6153,7 +6178,7 @@ color: #1B1D21;
     .pet-policy-text h3,
     .terms-labels span,
     .product-text-blog-box-wrapper h3{
-        font-size: 1.6rem;
+        font-size: 19px;
     }
     .policy-details span {
         font-size: 1.2rem;
@@ -6879,22 +6904,50 @@ height: 150px;
 }
 /*==product-page===================*/
 .product-page{
-    position: fixed;
-    left: 0px;
-    top:79px;
-    width: 100%;
-    height: 100vh;
     overflow-y: auto;
-    z-index: 600;
+    display: none;
+    height: 100%;
+}
+.ra1-product-page-popup{
+    position: fixed;
+    left: 50%;
+    top:60%;
+    transform: translate(-50%,-60%);
+    width: 95%;
+    height: calc(95vh - 80px);
+    z-index: 1001;
     background-color: #ffffff;
     display: none;
+}
+@media(max-width:600px){
+    .ra1-product-page-popup{
+        width: 97%;
+    } 
+}
+/* .swiper-slide.swiper-slide-active {
+    padding-left: 29px;
+} */
+.ra1-product-page-popup.active{
+    display: block;
 }
 .product-page.active{
     display: block;
 }
+.product-page-popup-bg{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.2);
+    z-index: 1000;
+    display: none;
+}
+.product-page-popup-bg.active{
+    display: block;
+}
 @media(max-width:600px){
     .product-page{
-        left: 0px;
         width: 100%;
         transition: all ease 0.3s;
     }
@@ -7608,7 +7661,7 @@ input#\33 d-input {
 }
 @media(max-width:600px){
     .ra-property-heading span{
-        font-size: 0.7rem;
+        font-size:15px;
     }
     #ra1 .property-text-title strong,
     #ra1 .property-text-title a{
@@ -7642,7 +7695,7 @@ input#\33 d-input {
         max-width: 190px;
     }
     .sort-filter-mob i{
-        font-size: 0.7rem !important;
+        font-size: 16px !important;
         margin-right: 5px;
         margin-bottom: 2px;
     }
@@ -7689,7 +7742,7 @@ input#\33 d-input {
 .dashboard-nav-right li svg{
     margin-right:10px;
 }
-.dashboard-nav-right li{
+.dashboard-nav-right li a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7697,8 +7750,12 @@ input#\33 d-input {
     margin-right: 40px;
     font-weight: 700;
     font-size: 1rem;
+    transition: all ease 0.3s;
 }
-.dashboard-nav-right li:last-child,
+.dashboard-nav-right li a:hover{
+    color: #7e7e7e;
+}
+.dashboard-nav-right li:last-child a,
 .dashboard-nav-left li:last-child a{
     margin-right: 0px !important;
 }
@@ -8081,7 +8138,7 @@ input#\33 d-input {
     color: #939393;
     font-weight: 500;
 }
-.dash-o-l-left-top-right a{
+.dash-o-l-left-top-right span:nth-child(1){
     color: #18D837;
     margin-right: 2px;
 }
@@ -8448,6 +8505,9 @@ input#\33 d-input {
         cursor: pointer;
     }
     .dashboard-nav-right li{
+        width: 100%;
+    }
+    .dashboard-nav-right li a{
         padding: 20px 0px;
         border-bottom: 1px solid #dddddd;
         width: 100%;
@@ -9038,15 +9098,19 @@ input#\33 d-input {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    position: absolute;
+    position:fixed;
     left: 50%;
     transform: translateX(-50%);
-    top: 0px;
-    width: 95%;
-    z-index: 1000;
+    top: -2px;
+    width: 87%;
+    z-index: 10000;
 }
 .poduct-page-btn-label-cont .ra-product-page-close{
-    margin-top: 10px;
+    margin-top: -13px;
+    border: 5px solid #ffffff;
+    box-shadow: none;
+    width: 40px;
+    height: 40px;
 }
 #dashboard .ra-nav{
     min-height: 70px;
