@@ -484,6 +484,7 @@ ul{
     border-radius: 6px;
     color: #141414;
     font-weight: 600;
+    white-space: nowrap;
     transition: all ease 0.3s;
 }
 .sort-drop a:hover{
@@ -690,6 +691,23 @@ ul{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 220px;
+    position: relative;
+}
+.home-popular-s .ra-property-text-bottom::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    height: 1px;
+    width: 147%;
+    background-color: #e6e6e6;
+}
+@media(max-width:600px) {
+    .ra-property-text-bottom{
+        max-width: 170px;
+        width: 90%;
+    }
 }
 .home-popular-s .ra-property-text-bottom{
     margin-top: 20px;
@@ -1077,8 +1095,11 @@ ul{
     }
     /* love */
     li.t-list.active span {
-        font-size: 19px;
+        font-size: 22px!important;
 
+    }
+    .terms-labels span{
+        font-size: 22px!important;
     }
     #explore-area {
         background: #fff7f3;
@@ -2270,20 +2291,21 @@ button.btn.card_btn {
     }
     .nav-listproperty span:nth-child(1){
         font-size: 27px;
-        color: #000000;
-        font-weight: 800;
+        color: #2b2b2b;
+        font-weight: 600;
         margin-bottom: 4px;
         display: flex;
         transition: all ease 0.3s;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        padding: 0px 5px;
+        width: 25px;
         height: 25px;
+        padding-bottom: 3px;
 
     }
     a.nav-listproperty span:hover {
-        background-color: #E7EBF0;
+        background-color: #b6b6b6;
         box-shadow: 2px 2px 16px rgb(0 0 0 / 12%);
     }
     .nav-listproperty span:nth-child(1):hover{
@@ -3974,7 +3996,8 @@ footer{
 .city-slider-btns{
     margin-left: auto !important;
     justify-content: flex-end;
-    margin-top: 25px;
+    margin-top: 36px;
+    margin-right: 90px;
 }
 @media(max-width:1024px){
     .city-slider-btns{
@@ -4833,9 +4856,11 @@ footer{
     box-shadow: -10px -10px 20px #FAFBFF;
 }
 .m-top-btns a:hover,
-.m-top-close-btn:hover,
 .form-next-bar-btns a:hover{
     background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #9e9e9e;
+}
+.m-top-close-btn:hover{
+    background: #ffffff;
 }
 .m-top-btns{
     grid-gap: 5px;
@@ -4852,6 +4877,7 @@ footer{
     border: 2px solid rgba(143, 143, 143, 0.2);
     box-shadow: -10px -10px 20px #FAFBFF;
     margin-left: 15px;
+    transition: all ease 0.3s;
 }
 /*==main================*/
 #product-main{
@@ -5556,7 +5582,7 @@ font-weight: 700;
     animation: float 4s ease-in-out infinite;
 }
 .pet-policy-text h3{
-    font-size: 1.8rem;
+    font-size: 28px!important;
     color: #141414;
     font-family: 'Cabinet Grotesk';
     font-weight: 700;
@@ -5625,7 +5651,7 @@ font-weight: 700;
     margin-top: 0px;
 }
 .terms-labels span{
-    font-size: 19px;
+    font-size: 28px!important;
      font-family: 'Cabinet Grotesk';
     font-style: normal;
     font-weight: 700;
@@ -6169,6 +6195,9 @@ color: #1B1D21;
         font-size: 1.4rem;
         padding: 0px;
     }
+    .terms-labels span{
+        font-size: 22px!important;
+    }
     .p-cost-calculator-img img{
         max-height: 300px;
      }
@@ -6183,7 +6212,7 @@ color: #1B1D21;
         font-size: 19px;
     }
     .policy-details span {
-        font-size: 1.2rem;
+        font-size: 17px;
     }
     .product-blog-left-box{
         display: flex;
@@ -6365,6 +6394,7 @@ color: #1B1D21;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 6px;
 }
 .product-main-btns .swiper-button-next,
 .product-main-btns .swiper-button-prev{
@@ -6729,7 +6759,7 @@ height: 150px;
 }
   @media(max-width:985px){
     .home-popular-s .p-slider-container {
-        height: 730px;
+        height: 750px;
     }
     .home-popular-s .property-text-options{
         display: grid;
@@ -6744,6 +6774,9 @@ height: 150px;
     }
     .p-slider-container {
         height:790px;}
+    .home-popular-s .p-slider-container {
+        height: 820px;
+    }
 
   }
   @media(max-width:780px){
@@ -6913,17 +6946,18 @@ height: 150px;
 .ra1-product-page-popup{
     position: fixed;
     left: 50%;
-    top:60%;
+    top:61%;
     transform: translate(-50%,-60%);
     width: 95%;
     height: calc(95vh - 80px);
     z-index: 1001;
     background-color: #ffffff;
     display: none;
+    border-radius: 8px;
 }
 @media(max-width:600px){
     .ra1-product-page-popup{
-        width: 97%;
+        width: 95%;
     } 
 }
 /* .swiper-slide.swiper-slide-active {
@@ -9053,6 +9087,7 @@ input#\33 d-input {
     .dash-talent-content .graph-top-text-select{
         margin-right: 12px;
     }
+   
 }
 @media(max-width:550px){
     .dash-talent-text{
@@ -9104,8 +9139,11 @@ input#\33 d-input {
     left: 50%;
     transform: translateX(-50%);
     top: -2px;
-    width: 87%;
+    width: 101%;
     z-index: 10000;
+}
+.poduct-page-btn-label-cont>svg {
+    margin-left: 50px;
 }
 .poduct-page-btn-label-cont .ra-product-page-close{
     margin-top: -13px;
@@ -9113,7 +9151,50 @@ input#\33 d-input {
     box-shadow: none;
     width: 40px;
     height: 40px;
+   
 }
 #dashboard .ra-nav{
     min-height: 70px;
+}
+
+.swiper-pagination{
+    display: block !important;
+}
+.day.today span::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 87%;
+    transform: translateX(-50%);
+    /* border-bottom: 2px solid orange; */
+    width: 14px!important;
+    height: 14px!important;
+    color: #0e0e0f;
+    background: #363B64!important;
+    border: 2px solid #FCFCFC;
+    border-radius: 9px!important;
+}
+.calendar-wrapper {
+    border: 0px!important;
+}
+.buttons-container {
+     border-bottom:0px !important;;
+}
+.week .day.header {
+    font-family: 'Poppins'!important;
+    color: #A098AE!important;
+    font-weight: 400!important;
+}
+.week:not(.start-on-monday) .day:last-child {
+    color: #FF606B!important;
+}
+.weeks-container {
+    background: #fdfdfd!important;
+    border-radius: 20px!important;
+}
+.prev-button, .next-button {
+    color: #A098AE!important;
+}
+.weeks-wrapper.header {
+    border-bottom:0px!important;
 }
