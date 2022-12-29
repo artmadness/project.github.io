@@ -41,8 +41,8 @@
   var defaults = {
     date: null,
     weekDayLength: 1,
-    prevButton: "Prev",
-    nextButton: "Next",
+    prevButton: "<i class='fa fa-arrow-left'></i>",
+    nextButton: "<i class='fa fa-arrow-right'></i>",
     monthYearSeparator: " ",
     onClickDate: function (date) {},
     onChangeMonth: function (date) {},
@@ -643,4 +643,10 @@
 
     return this;
   };
+  var $calendar = $("#calendar");
+$(".fc-day, .fc-day-top").hover(function(e) {
+        var date = moment.utc($(e.currentTarget).data("date"));
+        var events = $calendar.fullCalendar("clientEvents", function(event) { return event.start.startOf("day").isSame(date); });
+        console.log(events);
+    });    
 })(jQuery);

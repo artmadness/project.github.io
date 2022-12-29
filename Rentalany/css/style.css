@@ -8033,6 +8033,7 @@ input#\33 d-input {
     appearance:none;
     position: relative;
     outline: none;
+    margin-left: 6px;
 }
 .graph-top-text-select::after{
     content: '';
@@ -8596,7 +8597,7 @@ input#\33 d-input {
         grid-template-columns: 1fr;
     }
     .dash-graph-heading h3{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .dash-owner-last-right-graph{
         margin-top: 10px;
@@ -8609,6 +8610,9 @@ input#\33 d-input {
     }
     .graph-top-text{
         max-width: 100%;
+    }
+    .setting{
+        width: 100% !important;
     }
 }
 @media(max-width:450px){

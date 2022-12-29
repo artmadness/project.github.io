@@ -1,0 +1,15 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Calendar hover test</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <p:calendar />
+        </h:form>       
+        <script>
+            $(document).on("mouseenter", ".ui-datepicker-calendar td", function() {
+                console.log(this.dataset.year, this.dataset.month, this.children[0].textContent);
+            });
+        </script>
+    </h:body>
+</html>

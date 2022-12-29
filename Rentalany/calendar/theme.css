@@ -104,8 +104,8 @@
 /*  border-bottom: 2px solid orange;*/
   width: 10px;
   height: 10px;
-  color: blue;
-  background: blue;
+  color: #363B64;
+  background: #363B64;
 }
 
 .day.sunday span {

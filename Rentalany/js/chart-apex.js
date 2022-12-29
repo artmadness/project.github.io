@@ -9,8 +9,8 @@
 
 $(document).ready(function () {
 
-  var $primary = '#FE834C',
-    $success = '#EA5455',
+  var $primary = '#EF6E4D',
+    $success = '#F0C868',
     $danger = '#EA5455',
     $warning = '#FF9F43',
     $info = '#00cfe8',
@@ -140,16 +140,16 @@ $(document).ready(function () {
     },
     series: [ {
       name: 'Revenue',
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+      data: [60,76, 85, 101, 98, 87, 105, 91, 114, 94,40,50]
     }, {
       name: 'Free Cash Flow',
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+      data: [80,35, 41, 36, 26, 45, 48, 52, 53, 41,20,30]
     }],
     legend: {
       offsetY: -10
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+      categories: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Nov','Dec'],
     },
     yaxis: {
       title: {
@@ -200,13 +200,13 @@ $(document).ready(function () {
     },
     series: [ {
       name: 'Revenue',
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+      data: [80,35, 41, 36, 26, 45, 48, 52, 53, 41,20,30]
     }],
     legend: {
       offsetY: -10
     },
     xaxis: {
-      categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+      categories: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct','Nov','Dec'],
     },
     yaxis: {
       title: {

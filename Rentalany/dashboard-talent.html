@@ -33,7 +33,190 @@
         .anychart-credits-text{
             display: none !important;
         }
+        .dropbtn {
+  color: grey;
+  padding: 16px;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+/*  background-color: #3e8e41;*/
+}
+
+.apexcharts-menu-icon{
+        display: none;
+}
+#myProgress {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: -30px;
+}
+
+#myBar {
+  width: 50%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress2 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: -10px;
+
+  
+}
+
+#myBar2 {
+  width: 80%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress3 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: 10px;
+
+  
+}
+
+#myBar3 {
+  width: 40%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress4 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: 30px;
+
+  
+}
+
+#myBar4 {
+  width: 70%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress5 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: 50px;
+
+  
+}
+
+#myBar5 {
+  width: 60%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress6 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: 70px;
+
+  
+}
+
+#myBar6 {
+  width: 80%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress7 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: 90px;
+
+  
+}
+
+#myBar7 {
+  width: 90%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
+#myProgress8 {
+  width: 100px;
+  background-color: #F2F2F2;
+  transform: rotate(270deg);
+  border-radius: 10px;
+  margin-top: -15px;
+  margin-left: 110px;
+
+  
+}
+
+#myBar8 {
+  width: 20%;
+  height: 15px;
+  background-color: #64C882;
+  border-radius: 10px;
+}
     </style>
+
 </head>
 <body>
 
@@ -546,7 +729,14 @@
                                         <option value="">Day</option>
                                     </select>
                                     </div>
-                                    <span class="dash-grph-option-icon">...</span>
+                                    <div class="dropdown">
+  <span class="dash-grph-option-icon dropbtn">...</span>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
                                 </div>
                             </div><!--heading-end-->
 
@@ -584,8 +774,33 @@
                             <div class="dash-talent-left-end-box1">
                                 <strong>Rental Insurance</strong>
                                 <!--***graph****-->
-                                <div class="dash-talent-left-end-box1-graph">
-                                    <!-- <div id="column-chart2"></div> -->
+                                <div class="dash-talent-left-end-box1-graph" style="background: none !important;">
+                                    <div id="myProgress">
+  <div id="myBar"></div>
+</div>
+<div id="myProgress2">
+  <div id="myBar2"></div>
+</div>
+<div id="myProgress3">
+  <div id="myBar3"></div>
+</div>
+<div id="myProgress4">
+  <div id="myBar4"></div>
+</div>
+<div id="myProgress5">
+  <div id="myBar5"></div>
+</div>
+<div id="myProgress6">
+  <div id="myBar6"></div>
+</div>
+<div id="myProgress7">
+  <div id="myBar7"></div>
+</div>
+<div id="myProgress8">
+  <div id="myBar8"></div>
+</div>
+
+                                    
                                 </div>
                             </div>
                             <!--2-->
@@ -766,31 +981,26 @@ anychart.onDocumentReady(function () {
   
   // add data
   var data = anychart.data.set([
-    ['Spotify', 34],
-    ['Apple Music', 21],
-    ['Amazon Music', 15],
-    ['Tencent apps', 11],
-    ['YouTube Music', 6],
-    ['Others', 13]
+    ['Electricity', 34],
+    ['Water', 21],
+    ['Gas', 15]
   ]);
   
   // create a pie chart with the data
   var chart = anychart.pie(data);
   
   // set the chart radius making a donut chart
-  chart.innerRadius('55%')
+  chart.innerRadius('80%')
 
   // create a color palette
   var palette = anychart.palettes.distinctColors();
  
   // set the colors according to the brands
   palette.items([
-    { color: '#1dd05d' },
-    { color: '#000000' },
-    { color: '#00a3da' },
-    { color: '#156ef2' },
-    { color: '#f60000' },
-    { color: '#96a6a6' }
+    { color: '#18D837' },
+    { color: '#C466DC' },
+    { color: '#F76B1D' },
+    
   ]);
 
   // apply the donut chart color palette
@@ -858,7 +1068,24 @@ var swiper = new Swiper(".mySwiperdashtalentcard", {
           },
         },
       });
-
+        var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
 
     </script>
 </body>

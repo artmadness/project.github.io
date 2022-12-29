@@ -293,7 +293,7 @@ $(window).on("load", function () {
       height: 325,
       type: 'radialBar',
     },
-    colors: [$primary, $warning, $danger],
+    colors: ['#C466DC', '#18D837', '#F66B1D','#318DFF'],
     fill: {
       type: 'gradient',
       gradient: {
@@ -301,7 +301,7 @@ $(window).on("load", function () {
         shade: 'dark',
         type: 'vertical',
         shadeIntensity: 0.5,
-        gradientToColors: [$primary_light, $warning_light, $danger_light],
+        gradientToColors: ['#C466DC', '#18D837', '#F66B1D','#318DFF'],
         inverseColors: false,
         opacityFrom: 1,
         opacityTo: 1,
@@ -313,7 +313,7 @@ $(window).on("load", function () {
     },
     plotOptions: {
       radialBar: {
-        size: 125,
+        size: 130,
         hollow: {
           size: '20%'
         },
@@ -340,8 +340,8 @@ $(window).on("load", function () {
         }
       }
     },
-    series: [70, 52, 26],
-    labels: ['Finished', 'Pending', 'Rejected'],
+    series: [70, 52, 26,10],
+    labels: ['Visits', 'Likes', 'OTM','SF'],
 
   }
 
