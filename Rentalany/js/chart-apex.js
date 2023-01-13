@@ -920,7 +920,7 @@ $(document).ready(function () {
     }]
   }
   var pieChart = new ApexCharts(
-    document.querySelector("#pie-chart"),
+    document.querySelector("#pie-chart12"),
     pieChartOptions
   );
   pieChart.render();
