@@ -1965,6 +1965,7 @@ color: #021442;
     padding: 2px;
     padding-top: 4px;
     border-radius:50%;
+    
 }
 .card_content{
     padding:32px;
@@ -5568,7 +5569,7 @@ font-weight: 700;
 #pet-policy{
     width: 100%;
     padding: 80px 0px;
-    background-color: #fffbfa;
+    /* background-color: #fffbfa; */
     margin: 50px 0px;
 }
 .pet-policy-container{
@@ -5590,7 +5591,7 @@ font-weight: 700;
     animation: float 4s ease-in-out infinite;
 }
 .pet-policy-text h3{
-    font-size: 28px!important;
+    font-size: 57px!important;
     color: #141414;
     font-family: 'Cabinet Grotesk';
     font-weight: 700;
@@ -9757,7 +9758,7 @@ font-family: "Cabinet Grotesk";
 2. (画像の横幅+余白)×枚数の大きさに合わせて2000px!importantの値を変更
 3. 4000px!importantの値をその二倍に
 */
-.loopslider-container { width: 100%; text-align: center;}
+.loopslider-container { width: 100%; text-align: center; margin-top:60px;}
 .loopslider-container h2 { text-align: center; font-size: 30px; margin: 60px 10px 30px; letter-spacing: .1em; line-height: 1;}
 .loopslider-container .doubleLine { max-width: 430px; margin: 0 auto;}
 .loopslider-container p { text-align: center; font-size: 14px; margin: 30px 10px  60px; line-height: 1;}
@@ -9800,10 +9801,10 @@ font-family: "Cabinet Grotesk";
 /* carreer */
 
 .zero{
-    background-image: linear-gradient(to top,#000000ba, rgb(255, 201, 182, 0.7)),url(..//images/bg_header.jpg) ;
+    background-image:url(..//images/3d-illustration-residential-building-exterior.jpg) ;
     object-fit: cover;
     background-repeat: no-repeat;
-    min-height: 400px!important;
+    min-height: 500px!important;
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -9811,10 +9812,10 @@ font-family: "Cabinet Grotesk";
 }
 
 .cont{
-    background-image: linear-gradient(to top, #000000ba, rgb(255, 201, 182, 0.7)),url(..//images/discussion-of-salesmen-2021-09-24-01-22-08-utc.jpg) ;
+    background-image: url(..//images/contact.png) ;
     object-fit: cover;
     background-repeat: no-repeat;
-    min-height: 400px!important;
+    min-height: 600px!important;
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -9822,10 +9823,10 @@ font-family: "Cabinet Grotesk";
 }
 
 .date{
-    background-image: linear-gradient(to top, #000000ba, rgb(255, 201, 182, 0.7)),url(..//images/discussion-at-workplace-2022-03-30-20-23-29-utc.jpg) ;
+    background-image:url(..//images/large-group-multiethnic-diverse-colorful-people.jpg) ;
     object-fit: cover;
     background-repeat: no-repeat;
-    min-height: 400px!important;
+    min-height: 500px!important;
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -9888,7 +9889,7 @@ i.location-icon.fa-solid.fa-clock.mr-1 {
     font-weight: 500;
 }
 .loopslider-container{
-    margin-bottom: -146px;
+    /* margin-bottom: -146px; */
 }
 
 @media(max-width:600px){
@@ -9987,3 +9988,29 @@ i.location-icon.fa-solid.fa-clock.mr-1 {
     width: 75px;
 
 }
+.joint-team-right {
+    height: 154px;
+}
+.joint-team{
+    margin:50px 0px;
+}
+
+.yourtext{
+    padding-top: 60px;
+}
+#map {
+    height: 100%;
+  }
+  .joint-team p{
+      font-size: 18px;
+  }
+
+  @media(max-width:600px){
+    .pat {
+        right:7px;
+    }
+    .joint-team{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+  }

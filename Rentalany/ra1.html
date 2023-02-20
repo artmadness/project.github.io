@@ -26,6 +26,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="js/map.js"></script>
+  
+   
+   
 
 </head>
 <body>
@@ -6339,8 +6344,8 @@
                 <!--map-->
                 <div class="ra-map">
                     <label for="close-map"  title="close Map" class="close-mobile-map"><i class="fa-solid fa-angle-right"></i></label>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34201.55899641995!2d-74.01711614416355!3d40.739599757997304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2597d74a00a49%3A0xcd7bcb84f67a7cb0!2sTime%20Square!5e0!3m2!1sen!2s!4v1666808198531!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34201.55899641995!2d-74.01711614416355!3d40.739599757997304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2597d74a00a49%3A0xcd7bcb84f67a7cb0!2sTime%20Square!5e0!3m2!1sen!2s!4v1666808198531!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <div id="map"></div>
                     <!--dop-down-bar-->
                     <div class="map-drop-down">
                         <input type="checkbox" id="mapdrop" class="map-drop-check-btn">
@@ -6468,6 +6473,12 @@
 
     
     <!-- Swiper JS -->
+
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_gn_3XtpylUXw9XRhjE4MCkV1SgvcqN0&callback=initMap"
+    defer
+  ></script>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.6.1.js"></script>
 
@@ -6915,6 +6926,11 @@ var swiper = new Swiper(".mySwiperlabel", {
         },
       });
 
+
+
+ 
+
+   
     </script>
     
 </body>
